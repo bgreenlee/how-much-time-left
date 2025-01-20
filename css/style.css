@@ -32,3 +32,28 @@ ul.subsites {
     list-style-type: none;
     /* justify-content: center; */
 }
+
+.github-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    transition: opacity 0.2s;
+}
+
+.github-link:hover {
+    opacity: 0.7;
+}
+
+.github-link svg {
+    width: 32px;
+    height: 32px;
+    fill: #333;
+}
+
+footer {
+    font-size: small;
+    opacity: 80%;
+    text-align: center;
+    padding: 1em 4em;
+}
