@@ -4,7 +4,7 @@ body {
     padding: 20px;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     background-color: white;
 }
 
@@ -14,7 +14,20 @@ h1 {
     text-align: center;
 }
 
-.time-left {
+#target-date {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#time-left {
     font-size: 3.5rem;
     font-weight: bold;
     line-height: 1.4;
@@ -26,11 +39,17 @@ h1 {
     text-align: center;
 }
 
-ul.subsites {
+ul#menu {
     font-size: 1.5rem;
     text-align: center;
     list-style-type: none;
-    /* justify-content: center; */
+}
+
+.info {
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 .github-link {
