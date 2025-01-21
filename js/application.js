@@ -17,7 +17,7 @@
         },
         {
             'keyword': 'y2k38',
-            'title': 'Until the Epochalypse',
+            'title': 'Until the Epochalypse (Y2K38)',
             'link': 'https://en.wikipedia.org/wiki/Year_2038_problem',
             'date': '2038-01-19T03:14:07Z',
             'done': 'The Epochalypse has passed!'
