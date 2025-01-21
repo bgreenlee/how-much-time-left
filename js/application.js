@@ -80,6 +80,11 @@
         targetDate.textContent = '';
     }
 
+    function pluralize(units, amount) {
+        let unitStr = amount === 1 ? units : `${units}s`;
+        return `${amount} ${unitStr}`;
+    }
+
     function updateTimeLeft(target) {
         const timeElement = document.getElementById('time-left');
         const targetDate = new Date(target.date);
@@ -105,7 +110,12 @@
 
         const seconds = Math.floor(diff / 1000);
 
-        timeElement.innerHTML = `${weeks} weeks<br>${days} days<br>${hours} hours<br>${minutes} minutes<br>${seconds} seconds`;
+        timeElement.innerHTML = `
+            ${pluralize('week', weeks)}<br>
+            ${pluralize('day', days)}<br>
+            ${pluralize('hour', hours)}<br>
+            ${pluralize('minute', minutes)}<br>
+            ${pluralize('second', seconds)}`;
     }
 
     function hideTimeLeft() {
